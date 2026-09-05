@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleanup Guide - FootprintGuard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🛡️ FootprintGuard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/cleanup-guide">Cleanup Guide</a></li>
+                <li><a href="/privacy-tips">Privacy Tips</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Digital Footprint Cleanup Guide</h2>
+            <p>Step-by-step instructions to secure your online presence and remove exposed data</p>
+        </section>
+
+        <section class="guide-content">
+            <div class="guide-section">
+                <h3>📱 Social Media Account Management</h3>
+                
+                <div class="guide-item">
+                    <h4>1. Audit Your Accounts</h4>
+                    <ul>
+                        <li>Make a list of all accounts found in your scan</li>
+                        <li>Identify which accounts you still use regularly</li>
+                        <li>Note accounts with personal information exposure</li>
+                    </ul>
+                </div>
+
+                <div class="guide-item">
+                    <h4>2. Delete Unused Accounts</h4>
+                    <p><strong>Platform-specific deletion links:</strong></p>
+                    <ul>
+                        <li><a href="https://github.com/settings/admin" target="_blank">GitHub Account Deletion</a></li>
+                        <li><a href="https://twitter.com/settings/account" target="_blank">Twitter Account Deactivation</a></li>
+                        <li><a href="https://www.instagram.com/accounts/remove/request/permanent/" target="_blank">Instagram Account Deletion</a></li>
+                        <li><a href="https://www.facebook.com/help/delete_account" target="_blank">Facebook Account Deletion</a></li>
+                        <li><a href="https://www.linkedin.com/psettings/close-account" target="_blank">LinkedIn Account Closure</a></li>
+                        <li><a href="https://www.reddit.com/settings/deactivate_account" target="_blank">Reddit Account Deactivation</a></li>
+                    </ul>
+                </div>
+
+                <div class="guide-item">
+                    <h4>3. Strengthen Privacy Settings</h4>
+                    <p>For accounts you want to keep:</p>
+                    <ul>
+                        <li>Set profiles to private/friends-only</li>
+                        <li>Remove personal information (phone, address, birthdate)</li>
+                        <li>Disable location tagging</li>
+                        <li>Review tagged photos and posts</li>
+                        <li>Limit who can see your friends list</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h3>📧 Email Security</h3>
+                
+                <div class="guide-item">
+                    <h4>1. Check for Breaches</h4>
+                    <ul>
+                        <li>Visit <a href="https://haveibeenpwned.com" target="_blank">Have I Been Pwned</a></li>
+                        <li>Enter your email addresses</li>
+                        <li>Note which services were compromised</li>
+                    </ul>
+                </div>
+
+                <div class="guide-item">
+                    <h4>2. Change Compromised Passwords</h4>
+                    <ul>
+                        <li>Immediately change passwords for breached accounts</li>
+                        <li>Use unique passwords for each account</li>
+                        <li>Consider using a password manager (Bitwarden, 1Password, LastPass)</li>
+                    </ul>
+                </div>
+
+                <div class="guide-item">
+                    <h4>3. Enable Two-Factor Authentication</h4>
+                    <p>Enable 2FA on all important accounts:</p>
+                    <ul>
+                        <li>Email providers (Gmail, Outlook, etc.)</li>
+                        <li>Social media accounts</li>
+                        <li>Financial services</li>
+                        <li>Cloud storage accounts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h3>🌐 Domain & Website Privacy</h3>
+                
+                <div class="guide-item">
+                    <h4>1. Enable WHOIS Privacy</h4>
+                    <ul>
+                        <li>Contact your domain registrar</li>
+                        <li>Request WHOIS privacy protection</li>
+                        <li>This hides your personal information from public domain lookups</li>
+                    </ul>
+                </div>
+
+                <div class="guide-item">
+                    <h4>2. Remove Personal Information from Websites</h4>
+                    <ul>
+                        <li>Contact website administrators</li>
+                        <li>Request removal under GDPR/CCPA if applicable</li>
+                        <li>Use services like DeleteMe or Optery for automated removal</li>
+                    </ul>
+                </div>
+
+                <div class="guide-item">
+                    <h4>3. Secure DNS Records</h4>
+                    <ul>
+                        <li>Review DNS records for sensitive information</li>
+                        <li>Remove TXT records with verification codes after use</li>
+                        <li>Ensure MX records point to secure mail servers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h3>🔒 Ongoing Protection</h3>
+                
+                <div class="guide-item">
+                    <h4>1. Set Up Monitoring</h4>
+                    <ul>
+                        <li>Create Google Alerts for your name</li>
+                        <li>Monitor Have I Been Pwned regularly</li>
+                        <li>Check credit reports annually</li>
+                    </ul>
+                </div>
+
+                <div class="guide-item">
+                    <h4>2. Practice Good Digital Hygiene</h4>
+                    <ul>
+                        <li>Use unique usernames across platforms</li>
+                        <li>Avoid using personal information in usernames</li>
+                        <li>Think before posting personal information</li>
+                        <li>Regularly review app permissions</li>
+                    </ul>
+                </div>
+
+                <div class="guide-item">
+                    <h4>3. Data Broker Opt-Out</h4>
+                    <p>Remove your information from data broker sites:</p>
+                    <ul>
+                        <li>Acxiom: optout.acxiom.com</li>
+                        <li>Experian: experian.com/optout</li>
+                        <li>Equifax: equifax.com/personal/credit-report-services/credit-report-lock-and-alert/</li>
+                        <li>TransUnion: transunion.com/credit-help/general-information/opt-out-transunion</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-section">
+            <h3>Ready to Start Your Cleanup?</h3>
+            <p>Run a scan first to identify your digital exposures</p>
+            <a href="/" class="btn-primary" style="display: inline-block; text-decoration: none; margin-top: 1rem;">Start Free Scan</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>⚠️ <strong>Educational Purpose Only:</strong> This tool helps you discover and secure your own digital footprint. Always respect privacy laws and terms of service.</p>
+            <p>&copy; 2024 FootprintGuard - Final Year Project</p>
+        </div>
+    </footer>
+</body>
+</html>

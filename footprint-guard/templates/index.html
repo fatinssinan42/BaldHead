@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootprintGuard - Digital Footprint Scanner & Security Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🛡️ FootprintGuard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/cleanup-guide">Cleanup Guide</a></li>
+                <li><a href="/privacy-tips">Privacy Tips</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Discover & Secure Your Digital Footprint</h2>
+            <p>Scan your online presence across multiple platforms and get actionable recommendations to protect your privacy from hackers.</p>
+        </section>
+
+        <section class="scan-form">
+            <h3>Start Your Security Scan</h3>
+            <form id="scanForm">
+                <div class="form-group">
+                    <label for="username">Username (optional)</label>
+                    <input type="text" id="username" placeholder="Enter your username" minlength="3">
+                    <small>We'll search for this username across 20+ platforms</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address (optional)</label>
+                    <input type="email" id="email" placeholder="your@email.com">
+                    <small>Check for data breaches and domain exposure</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="domain">Domain (optional)</label>
+                    <input type="text" id="domain" placeholder="example.com">
+                    <small>Analyze DNS records, WHOIS info, and subdomains</small>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    <span class="btn-text">Start Scan</span>
+                    <span class="btn-loading" style="display: none;">Scanning...</span>
+                </button>
+            </form>
+
+            <div id="error-message" class="alert alert-error" style="display: none;"></div>
+        </section>
+
+        <section id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Scanning multiple platforms... This may take up to 30 seconds</p>
+        </section>
+
+        <section id="results" class="results" style="display: none;">
+            <h3>Security Report</h3>
+            
+            <div class="summary-cards">
+                <div class="card">
+                    <h4>Total Exposures</h4>
+                    <p class="stat-number" id="total-exposures">0</p>
+                </div>
+                <div class="card card-high">
+                    <h4>High Risk</h4>
+                    <p class="stat-number" id="high-risk">0</p>
+                </div>
+                <div class="card card-medium">
+                    <h4>Medium Risk</h4>
+                    <p class="stat-number" id="medium-risk">0</p>
+                </div>
+                <div class="card card-low">
+                    <h4>Low Risk</h4>
+                    <p class="stat-number" id="low-risk">0</p>
+                </div>
+            </div>
+
+            <div class="results-sections">
+                <div class="result-section">
+                    <h4>📱 Social Media Presence</h4>
+                    <div id="social-media-results" class="results-list"></div>
+                </div>
+
+                <div class="result-section">
+                    <h4>📧 Email & Domain Analysis</h4>
+                    <div id="email-domain-results" class="results-list"></div>
+                </div>
+
+                <div class="result-section">
+                    <h4>🔒 Security Recommendations</h4>
+                    <div id="recommendations" class="recommendations-list"></div>
+                </div>
+            </div>
+
+            <div class="export-actions">
+                <button onclick="window.print()" class="btn-secondary">Print Report</button>
+                <button onclick="location.reload()" class="btn-secondary">New Scan</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>⚠️ <strong>Educational Purpose Only:</strong> This tool helps you discover and secure your own digital footprint. Always respect privacy laws and terms of service.</p>
+            <p>&copy; 2024 FootprintGuard - Final Year Project</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
