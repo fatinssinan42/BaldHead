@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Tips - FootprintGuard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .tip-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .tip-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .tip-card ul {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tip-card li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .important-note {
+            background: #fef3c7;
+            border-left: 4px solid var(--warning-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .resource-list {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+        
+        .resource-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: block;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .resource-list a:last-child {
+            border-bottom: none;
+        }
+        
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🛡️ FootprintGuard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/cleanup-guide">Cleanup Guide</a></li>
+                <li><a href="/privacy-tips">Privacy Tips</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Essential Privacy & Security Tips</h2>
+            <p>Protect yourself from hackers by following these best practices for digital security</p>
+        </section>
+
+        <div class="important-note">
+            <h3>⚠️ Why This Matters</h3>
+            <p>Hackers use your digital footprint to:</p>
+            <ul>
+                <li>Guess passwords using personal information</li>
+                <li>Craft convincing phishing attacks</li>
+                <li>Answer security questions</li>
+                <li>Build profiles for social engineering</li>
+                <li>Identify vulnerable accounts</li>
+            </ul>
+        </div>
+
+        <div class="tips-grid">
+            <div class="tip-card">
+                <h3>🔐 Password Security</h3>
+                <ul>
+                    <li>Use at least 12 characters with mixed case, numbers, and symbols</li>
+                    <li>Never reuse passwords across accounts</li>
+                    <li>Use a password manager (Bitwarden, 1Password)</li>
+                    <li>Enable two-factor authentication everywhere</li>
+                    <li>Change passwords immediately after breaches</li>
+                </ul>
+            </div>
+
+            <div class="tip-card">
+                <h3>📧 Email Protection</h3>
+                <ul>
+                    <li>Use separate emails for different purposes</li>
+                    <li>Never share your primary email publicly</li>
+                    <li>Be cautious of phishing attempts</li>
+                    <li>Don't click suspicious links or attachments</li>
+                    <li>Verify sender addresses carefully</li>
+                </ul>
+            </div>
+
+            <div class="tip-card">
+                <h3>📱 Social Media Safety</h3>
+                <ul>
+                    <li>Set all profiles to private</li>
+                    <li>Don't share birthdate, phone, or address</li>
+                    <li>Avoid posting real-time location</li>
+                    <li>Review tags before they appear on your profile</li>
+                    <li>Limit friend/follower lists to people you know</li>
+                </ul>
+            </div>
+
+            <div class="tip-card">
+                <h3>🌐 Browser Privacy</h3>
+                <ul>
+                    <li>Use privacy-focused browsers (Firefox, Brave)</li>
+                    <li>Install uBlock Origin and Privacy Badger</li>
+                    <li>Cookies: Clear regularly or use auto-delete</li>
+                    <li>Use incognito mode for sensitive searches</li>
+                    <li>Consider using a VPN for public WiFi</li>
+                </ul>
+            </div>
+
+            <div class="tip-card">
+                <h3>📲 Mobile Security</h3>
+                <ul>
+                    <li>Keep your OS and apps updated</li>
+                    <li>Only install apps from official stores</li>
+                    <li>Review app permissions regularly</li>
+                    <li>Disable unnecessary location services</li>
+                    <li>Use device encryption and screen locks</li>
+                </ul>
+            </div>
+
+            <div class="tip-card">
+                <h3>🏦 Financial Protection</h3>
+                <ul>
+                    <li>Monitor bank statements regularly</li>
+                    <li>Set up transaction alerts</li>
+                    <li>Freeze credit reports when not needed</li>
+                    <li>Use virtual card numbers for online shopping</li>
+                    <li>Never share OTPs or verification codes</li>
+                </ul>
+            </div>
+
+            <div class="tip-card">
+                <h3>☁️ Cloud Storage Safety</h3>
+                <ul>
+                    <li>Encrypt sensitive files before uploading</li>
+                    <li>Use strong, unique passwords</li>
+                    <li>Enable 2FA on all cloud accounts</li>
+                    <li>Regularly review connected apps</li>
+                    <li>Don't store passwords in plain text</li>
+                </ul>
+            </div>
+
+            <div class="tip-card">
+                <h3>🔍 Search Engine Privacy</h3>
+                <ul>
+                    <li>Use DuckDuckGo or StartPage for private searches</li>
+                    <li>Log out of Google when not needed</li>
+                    <li>Clear search history regularly</li>
+                    <li>Use private browsing mode</li>
+                    <li>Avoid searching sensitive info on shared devices</li>
+                </ul>
+            </div>
+
+            <div class="tip-card">
+                <h3>📞 Phone & Communication</h3>
+                <ul>
+                    <li>Use Signal or WhatsApp for encrypted messaging</li>
+                    <li>Don't share sensitive info via SMS</li>
+                    <li>Verify caller identities</li>
+                    <li>Block unknown numbers</li>
+                    <li>Be wary of unsolicited calls claiming to be from banks/govt</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resource-list">
+            <h3>📚 Additional Resources</h3>
+            <a href="https://haveibeenpwned.com" target="_blank">Have I Been Pwned - Check for data breaches</a>
+            <a href="https://www.eff.org/" target="_blank">Electronic Frontier Foundation - Digital rights advocacy</a>
+            <a href="https://ssd.eff.org/" target="_blank">EFF Surveillance Self-Defense Guide</a>
+            <a href="https://www.consumer.ftc.gov/articles/how-avoid-identity-theft" target="_blank">FTC Identity Theft Prevention</a>
+            <a href="https://www.bitwarden.com/" target="_blank">Bitwarden - Free password manager</a>
+            <a href="https://duckduckgo.com/" target="_blank">DuckDuckGo - Private search engine</a>
+            <a href="https://proton.me/" target="_blank">ProtonMail - Encrypted email service</a>
+        </div>
+
+        <div class="cta-section" style="text-align: center; margin: 3rem 0;">
+            <h3>Take Action Today</h3>
+            <p>Start by scanning your digital footprint to identify vulnerabilities</p>
+            <a href="/" class="btn-primary" style="display: inline-block; text-decoration: none; margin-top: 1rem;">Run Your Free Scan</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>⚠️ <strong>Educational Purpose Only:</strong> This tool helps you discover and secure your own digital footprint. Always respect privacy laws and terms of service.</p>
+            <p>&copy; 2024 FootprintGuard - Final Year Project</p>
+        </div>
+    </footer>
+</body>
+</html>

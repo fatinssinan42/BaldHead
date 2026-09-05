@@ -1,0 +1,49 @@
+```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Dependencies
+.venv/
+venv/
+pip-log.txt
+pip-selfcheck.json
+
+# Coverage
+.coverage
+htmlcov/
+.coverage.*
+.nox/
+
+# Testing
+.pytest_cache/
+.hypothesis/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+```
